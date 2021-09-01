@@ -48,10 +48,15 @@ def loadData(catalog):
     Carga los datos de los archivos y cargar los datos en la
     estructura de datos
     """
+    print("Cargando books")
     loadBooks(catalog)
+    print("Se terminó loadBooks")
     loadTags(catalog)
+    print("Terminó tags")
     loadBooksTags(catalog)
+    print("Terminó BookTags")
     sortBooks(catalog)
+    print("Terminó sortBooks")
 
 
 def loadBooks(catalog):
